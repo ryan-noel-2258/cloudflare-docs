@@ -1,0 +1,34 @@
+---
+title: Budget alerts active by default for PAYGO accounts
+description: Eligible PAYGO accounts now automatically receive a $10 budget alert at the start of each billing cycle to help manage usage-based spending.
+date: 2026-06-15
+---
+
+# Budget alerts active by default for PAYGO accounts
+
+We are turning on budget alerts by default for eligible Pay-As-You-Go (PAYGO) accounts. If your account does not already have a budget alert configured, Cloudflare will automatically create one for you with a $10 account-level threshold. 
+
+This automatic alert will activate at the start of your next billing cycle, ensuring it does not trigger based on usage you have already incurred in your current cycle. 
+
+## Why this matters
+
+Usage-based products offer immense flexibility, but unexpected traffic spikes or testing environments can lead to billing surprises. By introducing a default threshold, Cloudflare provides immediate, proactive visibility into your account-level spending without requiring manual configuration. 
+
+The default alert behaves exactly like a custom alert:
+* **Informational only:** When your projected monthly usage-based spend reaches the $10 threshold, Cloudflare sends an email notification to the account administrators.
+* **No service disruption:** This alert does not cap, throttle, or stop your active Cloudflare services or usage.
+
+## Managing your alerts
+
+You retain full control over your budget configurations. You can adjust the $10 threshold, set up additional tiered alerts, or opt out by removing the alert entirely. These adjustments can be made directly in the dashboard under **Manage Account** > **Billing** > **Billable Usage**, or via your account **Notifications** settings.
+
+If you have already configured one or more custom budget alerts for your account, your settings will remain untouched and no default alert will be added. 
+
+> **Note:** Default alerts apply strictly to PAYGO self-serve accounts utilizing active usage-based products. Enterprise contract accounts are not in scope for this update.
+
+## Dashboard Overview
+
+![Dashboard location for managing budget alerts](path/to/budget-alerts-screenshot.png)
+*Product Managers: Insert a screenshot here showing the 'Billable Usage' dashboard page with the default $10 budget alert toggle.*
+
+To learn more about tracking your spending and customizing notifications, refer to the [Budget alerts documentation](https://developers.cloudflare.com/billing/manage/budget-alerts/).
